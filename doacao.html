@@ -1,139 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>quemSomos</title>
+    <title>doação</title>
 </head>
 <body>
     <div class="conteudo-menu">
-        <div class="circulo"></div>
-        <header>
-            <a href="index.html"><img src="imagens/adopetamarelo.png" class="logo" alt="logo do adopet em branco"></a>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="doacao.html">Doe</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </header>
-        <div class="content">
-
-            
-           
-            <div >
+    <header>
+        <a href="index.html" tabindex="1"><img src="imagens/adopetamarelo.png" class="logo" alt="logo do adopet em branco"></a>
+        <ul>
+            <li><a href="#conteudo-principal" tabindex="2">Ir para o conteúdo principal</a></li>
+            <li><a href="index.html" tabindex="3">Início</a></li>
+            <li><a href="quemsomos.html" tabindex="4">Quem Somos</a></li>
+            <li><a href="doacao.html" class="menu active" tabindex="5">Doe</a></li>
+            <li><a href="contato.html" tabindex="6">Contato</a></li>
+        </ul>
+     </header>
+        <div class="content" style="display: flex; align-items: center; flex-direction: column;" id="conteudo-principal">
+            <div>
                 <div>
                     <h1>Doações via Pix ou Depósito em conta</h1> <br>
-                        <p>
-                            <b>PIX:</b> 
-                            e-mail: contato@adopet.com.br
-                        </p><br>
-                        <p><b>TED ou depósito em conta: </b> <br>
-                            Itaú <br>
-                            Agência: 1234-5 <br>
-                            Conta-corrente: 1234-x <br>
-                            organização adopet <br>
-                        </p><br>
-                </div>
-                <h1>Doações recorrentes</h1> <br>
+                        <ul>
+                        <li><b>PIX:</b></li>
+                        <li>e-mail: contato@adopet.com.br</li>
+                        <li><b>TED ou depósito em conta: </b></li>
+                        <li>Itaú</li>
+                        <li> Agência: 1234-5</li>
+                        <li>Conta-corrente: 1234-x</li>
+                        <li>organização adopet</li>
+                        </ul>
+                </div><br>
+                
+                <h1>Doações recorrentes</h1><br>
                 <p class="fundo_paragrafo">Ao contribuir mensalmente, você ajuda a manter este projeto que já ajudou milhares de animais resgatados. 
                     Todo mês você receberá por email um boletim mensal com 
                     prestação de contas das nossas atividades.</p><br>
 
-                    <h3>Escolha o melhor plano para você: </h3> <br>
+                    <h3>Escolha o melhor plano para você: </h3><br>
                     <table class="animais">
+                        <caption>Opções de planos</caption>
                         <thead>
+                            <tr>
                             <th></th>
-                            <th>planos</th>
-                            <th>valor</th>
-                            <th>opção de pagamento</th>
-                            <th>opção de pagamento</th>
+                            <th scope="col"> planos</th>
+                            <th scope="col"> valor</th>
+                            <th scope="col"> Opção de pagamento</th>
+                            <th scope="col"> Opção de pagamento</th>
+                            </tr>
                         </thead>
                         
                         <tbody>
                             <tr>
-                                <td>
-                                    <img src="imagens/capybara.png"
-                                        height="95px" 
-                                        alt="fotografia com formato de uma estrela de uma capivara em um campo bem verde, ela se encontra deitada
-                                        observando a paisagem  ">
-                                </td>
-                                <td>Amigo para todas as horas</td>
-                                <td>R$10</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/pagseguro.png" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/paypal.png" height="30px" alt="">
-                                    </a>
-                                </td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="imagens/capybara.png" 
+                                        height="80" alt="fotografia com formato de uma estrela de uma capivara em um campo bem verde, ela se encontra deitada
+                                        observando a paisagem"> 
+                                        <figcaption>
+                                            <span>Capivara</span>
+                                        </figcaption>
+                                    </figure>
+                                    
+                                </th>
+                                    <td>Amigo para todas as horas</td>
+                                    <td>R$10</td>
+                                    <td>
+                                    <a href="#"><img src="imagens/pagseguro.png" alt="link com logo da empresa Pagseguro para ir para pagina de pagamento"></a>
+                                    </td>
+                                    <td>
+                                    <a href="#"><img src="imagens/paypal.png" height="30" alt="link com logo da empresa PayPal para ir para pagina de pagamento"></a>
+                                    </td>
                             </tr>
+
                             <tr>
-                                <td>
-                                <img src="imagens/doguinho.png" 
-                                    height="90px" 
-                                    alt="fotografia da cabeça de um cachorro de pelagem branca com marrom claro, em uma area externa com topo de arvores ao fundo,
-                                    o cachorro está com a boca aberta e olhando para a camera ">
-                                </td>
-                                <td>Amigão</td>
-                                <td>R$25</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/pagseguro.png" alt="logo da pagSeguro">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/paypal.png" height="30px" alt="Logo do PayPal credit">
-                                    </a>
-                                </td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="imagens/doguinho.png" 
+                                        height="80" 
+                                        alt="fotografia da cabeça de um cachorro de pelagem branca com marrom claro, em uma area externa com topo de arvores ao fundo,
+                                        o cachorro está com a boca aberta e olhando para a camera ">
+                                        <figcaption>
+                                            <span>Cachorrinho</span>
+                                        </figcaption>
+                                    </figure>
+                                </th>
+                                    <td>Amigão</td>
+                                    <td>R$25</td>
+                                    <td>
+                                        <a href="#"><img src="imagens/pagseguro.png" alt="link com logo da empresa Pagseguro para ir para pagina de pagamento"></a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="imagens/paypal.png" height="30" alt="link com logo da empresa PayPal para ir para pagina de pagamento"></a>
+                                    </td>
                             </tr>
+                            
                             <tr>
-                                <td>
-                                <img src="imagens/gatinhos.png" 
-                                    height="90px" 
-                                    alt="fotografia de dois gatos, um branco e outro listrado em uma area externa 
-                                    com plantas desfocadas ao fundo, um esta deitado e outro esta com a cabeça apoiada em cima do outro gato ">
-                                </td>
-                                <td>Amigo do coração</td>
-                                <td>R$50</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/pagseguro.png" height="30px" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/paypal.png" height="30px" alt="">
-                                    </a>
-                                </td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="imagens/gatinhos.png" 
+                                        height="80" 
+                                        alt="fotografia de dois gatos, um branco e outro listrado em uma area externa 
+                                        com plantas desfocadas ao fundo, um esta deitado e outro esta com a cabeça apoiada em cima do outro gato ">
+                                        <figcaption>
+                                            <span>Gatinhos</span>
+                                        </figcaption>
+                                    </figure>
+                                </th>
+                                    <td>Amigo do coração</td>
+                                    <td>R$50</td>
+                                    <td>
+                                        <a href="#"><img src="imagens/pagseguro.png" height="30" alt="link com logo da empresa Pagseguro para ir para pagina de pagamento"></a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="imagens/paypal.png" height="30" alt="link com logo da empresa PayPal para ir para pagina de pagamento"></a>
+                                    </td>
                             </tr>
+
                             <tr>
-                                <td>
-                                    <img src="imagens/BFF.png" 
-                                        height="90px" 
-                                        alt="fotografia de um guaxinim em um fundo branco circular, o animal se contra em pé e de braços abertos "></td>
-                                <td>BFF(Best Friend Forever)</td>
-                                <td>R$100</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/pagseguro.png" 
-                                            alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <img src="imagens/paypal.png" 
-                                            height="30px" 
-                                            alt="">
-                                    </a>
-                                </td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="imagens/BFF.png" 
+                                        height="80" 
+                                        alt="fotografia de um guaxinim em um fundo branco circular, o animal se contra em pé e de braços abertos ">
+                                        <figcaption>
+                                            <span>Guaxinim</span>
+                                        </figcaption>
+                                    </figure>
+                                </th>
+                                    <td>BFF(Best Friend Forever)</td>
+                                    <td>R$100</td>
+                                    <td>
+                                        <a href="#"><img src="imagens/pagseguro.png" height="30" alt="link com logo da empresa Pagseguro para ir para pagina de pagamento"></a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="imagens/paypal.png" height="30" alt="link com logo da empresa PayPal para ir para pagina de pagamento"></a>
+                                    </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div> 

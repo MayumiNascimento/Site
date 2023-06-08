@@ -14,7 +14,8 @@ p {
 }
 
 .fundo_paragrafo{
-    background-color: #1962eb;
+    background-color: #03338C;
+    width: 800px;
 }
 
 .conteudo-menu{
@@ -25,19 +26,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1962eb;
-}
-
-a:link, a:visited {
-	text-decoration: none;
+    background: #03338C;
 }
 
 a:hover{
 	color: #4d85cf;
     font-weight: bold;
-}
-a:active{
-	text-decoration: none;
 }
 
 header {
@@ -79,6 +73,9 @@ h1{
     color: #38e7b2;
 }
 
+.menu.active{
+    text-decoration: underline 5px;
+}
 .content {
     position: relative;
     width: 100%;
@@ -92,28 +89,28 @@ h1{
     max-width: 600px;
 }
 
-.content .textBox h2 {
+.content .textBox h1 {
     color: #333;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
 
-.content .textBox h2 span {
+.content .textBox h1 span {
     color: #38e7b2;
     font-size: 1.2em;
     font-weight: 900;
 }
 
 .content .textBox {
-    color: #333;
+    color: #FFFFFF;
 }
 
 .textBox a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #00a76f;
+    background: #006644;
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
@@ -195,12 +192,15 @@ h1{
     clip-path: circle(600px at right 800px);
 }
 
-/* ========================= tabela de animais pra adoção */
+/* ==================== tabela de animais pra adoção ============= */
 .animais  {
     margin: 0rem 1rem 1rem 1rem;
     border-collapse: collapse; 
-    color: #000000;
+    color: #CCCCCC;
     border-radius: 20px;
+}
+h3{
+    color: #CCCCCC;
 }
 
 .animais th, td {
@@ -210,52 +210,11 @@ h1{
     border-bottom: 2px solid;
 }
 
-/* ========================= FORMULÁRIO DE CONTATO ========================= */
-
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
-}
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea, button {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #006249;
-    border-radius: 5px;
-}
-
 /* Elementos de classe "campo" */
 .campo {
     margin-bottom: 1em;
 }
 
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-    margin-bottom: 0.2em;
-    color: #003362;
-    display: block;
-}
-
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
-}
-
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
-    border: 1px solid #003362;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
-    resize: none;
-}
-
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-    padding-right: 1em;
-}
 
 /* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
 .campo input:focus, .campo select:focus, .campo textarea:focus {
@@ -264,11 +223,11 @@ fieldset.grupo .campo {
 
 /* Elemento de classe "botao" */
 .botao {
-    font-size: 1.2em;
-    background: #38e7b2;
+    font-size: 1.3em;
+    background: #006644;
     border: 0;
     margin-bottom: 1em;
-    color: #ffffff;
+    color: #0000;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -291,17 +250,6 @@ fieldset.grupo .campo {
     cursor: pointer;
 }
 
-/* Posicionamento Textarea (unitário) */
-.postxtarea{
-    position: absolute;
-    top: 90%;    
-}
-
-/* Posicionamento do Formulário inteiro */
-.posforminteiro{
-    margin-top: 25px;
-}
-
 footer{
     background-color: #00a876;
     align-items: center;
@@ -309,4 +257,113 @@ footer{
     color: #fff;
     height: 30px;
     z-index: 3;
+}
+/* ===================== FORMULARIO DE CONTATO =====================*/
+fieldset {
+    border: 0;
+}
+
+label + span strong {
+    color: #F00;
+}
+
+label[for="email"] abbr {
+    text-decoration-line: none;
+}
+
+input {
+    height: 2.5rem
+}
+
+input, textarea {
+    width: 300px;
+    border-radius: 5px;
+}
+
+input:required:invalid {
+    border: 1px solid #F00;
+    outline: solid 1px #F00;
+}
+
+input:required:invalid:hover, input:required:invalid:focus {
+    outline: solid 2px #F00;
+}
+
+input:nth-child(odd), input:nth-child(even), textarea[id="mensagem"] {
+    margin-top: 0.75rem;
+}
+
+textarea {
+    padding-top: 5px;
+    font-size: 0.75rem !important;
+}
+
+input:hover, textarea:hover, button:hover, input:focus, textarea:focus, button:focus {
+    outline: solid 2px #000;
+}
+
+input:focus, textarea:focus {
+    background-color: #D4E9E2;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #000;
+}
+
+textarea {
+    resize: none;
+}
+
+label[for="mensagem"], label[for="mensagem"] + span {
+    vertical-align: 115px;
+}
+
+button {
+    font-size: 1.3em;
+    background: #006644;
+    border-radius:0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-top: 30px;
+    margin-left: 350px;
+    transform: translate(-50%, -50%);
+}
+
+ul, li{
+    list-style: none;
+    color: white;
+}
+
+/* PARA MENSAGEM DE ERRO */
+.clear {
+    background: transparent;
+    border: none;
+    color: white;
+}
+.solid {
+    background: white;
+    border: none;
+    color: rgb(45, 211, 111);
+}
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.error {
+    background: #ffd842;
+    color: rgb(0, 0, 0);
+    
+} 
+
+.democlass {
+    color: red;
+  }
+
+header a:hover {
+    text-decoration: underline;
 }
